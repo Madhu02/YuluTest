@@ -15,4 +15,11 @@ struct Myplaces: Codable {
     var longitude: Double?
     var imageUrl: String?
     
+    enum CodingKeys: String, CodingKey {
+        case id = "product_id"
+        case title = "title"
+        case latitude = "latitude"
+        case longitude = "longitude"
+        case imageUrl = "imageUrl"
+    }
 }
